@@ -1,15 +1,23 @@
 #Design_Patterns:-
 
-Creational Patterns:
-1.Factory design pattern
-2.Singleton Pattern
+1.Creational Patterns:
 
-Structural Patterns:
-1.Adapter Patterns
-2.Facade Design Pattern
-3.Proxy Pattern
+[1.1]Factory design pattern
 
-Behavioral Patterns:
-1.Observer Pattern
-2.Strategy Pattern
-3.State Pattern
+[1.2]Singleton Pattern
+
+2.Structural Patterns:
+
+[2.1]Adapter Patterns
+
+[2.2]Facade Design Pattern
+
+[2.3]Proxy Pattern
+
+3.Behavioral Patterns:
+
+[3.1]Observer Pattern
+
+[3.2]Strategy Pattern
+
+[3.3]State Pattern
