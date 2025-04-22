@@ -7,6 +7,7 @@
 You go to a **vehicle factory** and say you want a "Bike" or "Car". You don’t care how it’s made, just that it returns the appropriate vehicle.
 
 **C Example:**
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -25,6 +26,10 @@ Vehicle* createVehicle(const char* type) {
     if (strcmp(type, "Bike") == 0) return &bike;
     return NULL;
 }
+```
+
+---
+
 ### [1.2] Singleton Pattern  
 **Purpose:** Ensures a class has only one instance.
 
@@ -32,6 +37,7 @@ Vehicle* createVehicle(const char* type) {
 There should be only **one President** in a country. You don’t create a new one each time you need a leader.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 typedef struct {
@@ -42,6 +48,10 @@ President* getPresidentInstance() {
     static President instance = {0}; // initialized once
     return &instance;
 }
+```
+
+---
+
 ## 🧩 2. Structural Patterns
 
 ### [2.1] Adapter Pattern  
@@ -51,6 +61,7 @@ President* getPresidentInstance() {
 Your laptop has a USB-C port, but your pen drive is USB-A. You use an **adapter**.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 void usbA() {
@@ -69,6 +80,9 @@ UsbC getAdapter() {
     UsbC usbC = { .connect = adapterConnect };
     return usbC;
 }
+```
+
+---
 
 ### [2.2] Facade Pattern  
 **Purpose:** Hides complex subsystems behind a simpler interface.
@@ -77,6 +91,7 @@ UsbC getAdapter() {
 You press one button on a **remote**, but internally it handles turning on TV, speakers, and set-top box.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 void turnOnTV() { printf("TV ON\n"); }
@@ -86,6 +101,10 @@ void pressPowerButton() {
     turnOnTV();
     turnOnSoundSystem();
 }
+```
+
+---
+
 ### [2.3] Proxy Pattern  
 **Purpose:** Controls access to another object (with logging, permission, etc.)
 
@@ -93,6 +112,7 @@ void pressPowerButton() {
 A **secretary** (proxy) controls access to a **boss**.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 void realAccess() {
@@ -105,6 +125,9 @@ void proxyAccess(int hasPermission) {
     else
         printf("Access Denied\n");
 }
+```
+
+---
 
 ## 🔁 3. Behavioral Patterns
 
@@ -115,6 +138,7 @@ void proxyAccess(int hasPermission) {
 You **subscribe to a YouTube channel**, and you get notified when a new video is uploaded.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 typedef void (*Observer)();
@@ -126,6 +150,9 @@ void notifyAll(Observer observers[], int count) {
     for (int i = 0; i < count; i++)
         observers[i]();
 }
+```
+
+---
 
 ### [3.2] Strategy Pattern  
 **Purpose:** Allows changing the algorithm at runtime.
@@ -134,6 +161,8 @@ void notifyAll(Observer observers[], int count) {
 You can pay by **Cash, UPI, or Card** — strategy changes but the goal is same: Pay.
 
 **C Example:** (Already shown earlier)
+
+---
 
 ### [3.3] State Pattern  
 **Purpose:** Allows object to change behavior based on internal state.
