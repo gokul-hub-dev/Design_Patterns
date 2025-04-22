@@ -192,3 +192,10 @@ void operate(TrafficLight* light) {
 }
 
 ```
+
+
+[3.3] State Pattern
+Purpose: Allows object to change behavior based on internal state.
+
+Real-Life Analogy:
+A traffic light changes its behavior (red/yellow/green) based on current state.
