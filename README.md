@@ -160,7 +160,31 @@ void notifyAll(Observer observers[], int count) {
 **Real-Life Analogy:**  
 You can pay by **Cash, UPI, or Card** — strategy changes but the goal is same: Pay.
 
-**C Example:** (Already shown earlier)
+**C Example:**  
+```c
+#include <stdio.h>
+
+// Define strategy type
+typedef void (*PayStrategy)();
+
+// Strategies
+void payCash()  { printf("Paid by Cash\n"); }
+void payUPI()   { printf("Paid by UPI\n"); }
+void payCard()  { printf("Paid by Card\n"); }
+
+// Context
+void makePayment(PayStrategy strategy) {
+    strategy();  // Call selected strategy
+}
+
+// Main
+int main() {
+    makePayment(payCash);   // Output: Paid by Cash
+    makePayment(payUPI);    // Output: Paid by UPI
+    makePayment(payCard);   // Output: Paid by Card
+    return 0;
+}
+```
 
 ---
 
