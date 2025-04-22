@@ -171,6 +171,7 @@ You can pay by **Cash, UPI, or Card** — strategy changes but the goal is same:
 A **traffic light** changes its behavior (red/yellow/green) based on current state.
 
 **C Example:**
+```c
 #include <stdio.h>
 
 typedef void (*StateFunction)();
@@ -189,3 +190,5 @@ void changeState(TrafficLight* light, StateFunction newState) {
 void operate(TrafficLight* light) {
     light->currentState();
 }
+
+```
