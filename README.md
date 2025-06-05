@@ -12,9 +12,13 @@ So, let's dive in.
 ### 𝟭. 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
 
  🔹 Singleton: Use when a single instance of a class is needed. Some examples are logging and database connections. 
+ 
  🔹 Factory Method: Decouple object creation from usage. For example, you create different types of database connections based on configuration.
+ 
  🔹 Abstract Factory: Create families of related objects. For example, I build parsers for different file formats.
+ 
  🔹 Builder: Constructing complex objects step by step. For example, if you need to create a complex domain object.
+ 
  🔹 Prototype: Creating duplicate objects and reusing cached objects to reduce database calls.
 
 ### 𝟮. 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
