@@ -1,6 +1,6 @@
-Selecting the correct design pattern in software engineering is crucial for effective problem-solving. This guide streamlines the process, enabling you to make informed decisions between patterns based on your specific needs. 
+** Selecting the correct design pattern in software engineering is crucial for effective problem-solving. This guide streamlines the process, enabling you to make informed decisions between patterns based on your specific needs. **
 
-It provides concise descriptions and valuable use cases for each pattern, making it easier to understand and apply them in real-world scenarios. 
+** It provides concise descriptions and valuable use cases for each pattern, making it easier to understand and apply them in real-world scenarios. **
 
 To select a pattern, we must first go through the problem identification. If the problem is related to:
 
