@@ -10,7 +10,6 @@ To select a pattern, we must first go through the problem identification. If the
 So, let's dive in.
 
 ### 𝟭. 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
-
  🔹 Singleton: Use when a single instance of a class is needed. Some examples are logging and database connections. 
  
  🔹 Factory Method: Decouple object creation from usage. For example, you create different types of database connections based on configuration.
@@ -22,19 +21,25 @@ So, let's dive in.
  🔹 Prototype: Creating duplicate objects and reusing cached objects to reduce database calls.
 
 ### 𝟮. 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
-
  🔹 Adapter: Make incompatible interfaces compatible. For example, it integrates a new logging library into an existing system that expects a different interface.
+ 
  🔹 Composite: Represent part-whole hierarchies. For example, graphic objects in a drawing application can be grouped and treated uniformly
+ 
  🔹 Proxy: Control access to objects. For example, lazy loading of a high-resolution image in a web application.
+ 
  🔹 Decorator: Dynamically add/remove behavior. For example, we are implementing compression or encryption on top of file streams.
+ 
  🔹 Bridge: Decouple abstraction from implementation. For example, I am separating platform-specific code from core logic.
 
 ### 𝟯. 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
-
  🔹 Strategy: Define a family of algorithms. These algorithms enable users to select from various sorting or compression algorithms.
+ 
  🔹 Observer: Maintain a consistent state by being notified of changes and, for example, notifying subscribers of events in a messaging system.
+ 
  🔹 Command: Encapsulate a request as an object. For example, I implement undo/redo functionality in a text or image editor.
+ 
  🔹 State: Encapsulate state-specific behavior. For example, we are handling different states of a user interface element (e.g., enabled, disabled, selected).
+ 
  🔹 Template Method: Define the skeleton of an algorithm in operation, deferring some steps to subclasses and implementing a base class for unit testing with customizable setup and teardown steps.
 
 ## 🧱 1. Creational Patterns
