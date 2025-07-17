@@ -263,22 +263,15 @@ void operate(TrafficLight* light) {
 
 ### ✅ Design Patterns Overview
 **🧱Creational Patterns**  
-**Factory** – Used to create different smart devices. 
-
+**Factory** – Used to create different smart devices.  
 **Singleton** – Ensures only one instance of the SmartHomeController. 
 
-**🧠Behavioral Patterns**
+**🧠Behavioral Patterns**  
+**Adapter** – Adapts legacy devices to the smart interface.  
+**Facade** – Provides a simplified interface to control all devices.  
+**Proxy** – Acts as a proxy between the user and actual device (e.g., for logging or access control).  
 
-**Adapter** – Adapts legacy devices to the smart interface.
-
-**Facade** – Provides a simplified interface to control all devices.
-
-**Proxy** – Acts as a proxy between the user and actual device (e.g., for logging or access control).
-
-**🏗️Structural Patterns**
-
-**Observer** – Notifies devices of events (e.g., power cut).
-
-**Strategy** – Switch device operation modes (eco, turbo, etc.).
-
+**🏗️Structural Patterns**  
+**Observer** – Notifies devices of events (e.g., power cut).  
+**Strategy** – Switch device operation modes (eco, turbo, etc.).  
 **State** – Track and change device state (on, off, standby).
