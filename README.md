@@ -261,7 +261,7 @@ void operate(TrafficLight* light) {
 
 ```
 
-### ✅ Design Patterns Overview
+### ✅ HomeAutomation Design Patterns Overview
 **🧱Creational Patterns**  
 **Factory** – Used to create different smart devices.  
 **Singleton** – Ensures only one instance of the SmartHomeController. 
