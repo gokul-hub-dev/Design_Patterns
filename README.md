@@ -267,7 +267,7 @@ void operate(TrafficLight* light) {
 2.Singleton – Ensures only one instance of the SmartHomeController.
 
 **🧠Behavioral Patterns**
-1.Adapter – Adapts legacy devices to the smart interface.
+**1.Adapter – Adapts legacy devices to the smart interface.**
 2.Facade – Provides a simplified interface to control all devices.
 3.Proxy – Acts as a proxy between the user and actual device (e.g., for logging or access control).
 
